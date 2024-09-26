@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- all CSS is done externally via the stylesheet below -->
+    <link rel='stylesheet' type='text/css' href='stylesheet.css'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POS System</title>
+</head>
+<body>
+    <!-- this will be a container which stores all of the buttons and the cart system -->
+    <div id="pos-container">
+        <div id="products-list"></div> <!-- this establishes the product list, the rest will be done externally via css and js -->
+        <div id="cart">
+            <h2>Shopping Cart</h2>
+            <ul id="cart-items"></ul>
+            <p>Total Price: £<span id="total-price">0.00</span></p>
+            <div class="button-row">
+                <button id = "clear-btn">Clear</button>
+                <button id="checkout-btn">Checkout</button>
+        </div>
+        </div>
+    </div>
+    <div id="footer"> <!-- this is the bottom of the page, which is another box, outside the container
+                            and will contain redirect buttons. -->
+            <a href=order.html>
+                <button class="footer-btn highlight">Ordering Page</button> <!-- highlight as usability feature, highlights on what page the user is on -->
+            </a>
+            <a href=history.html>
+                <button class="footer-btn">Order History</button>
+            </a>
+    </div>
+    <script type='text/javascript' language='javascript' src='order.js'> </script> <!-- importing the external javascript file -->
+</body>
+</html>
